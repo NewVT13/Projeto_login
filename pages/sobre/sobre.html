@@ -28,29 +28,51 @@
         background-color: #fff;
       }
       .conteiner_historia {
-        width: 80%;
         display: flex;
         justify-content: center;
         flex-direction: column;
       }
+      .conteiner_historia p {
+        margin: 10px;
+      }
       .titulos {
         border-bottom: 2px #ffe636 solid;
       }
-      .conteiner_secundario {
+      .conteiner_escolha {
         display: flex;
         justify-content: space-between;
+        gap: 30px;
+        padding: 40px;
+        flex-wrap: wrap;
+      }
+      .icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+        margin: 0;
       }
       .conteiner_menor {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         text-align: center;
-        flex-wrap: wrap;
         background-color: #ffe636;
-        border-radius: 4px;
+        border-radius: 8px;
         height: 180px;
         width: 30%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+      }
+
+      .conteiner_menor h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .conteiner_menor p {
+        font-size: 14px;
+        line-height: 1.5;
       }
     </style>
   </head>
@@ -81,16 +103,19 @@
     </div>
     <div class="conteiners">
       <h2 class="titulos">Por que escolher a GeekShop</h2>
-      <div class="conteiner_secundario">
+      <div class="conteiner_escolha">
         <div class="conteiner_menor">
+          <div class="icon">✔️</div>
           <h3>Autenticidade Garantida</h3>
           <p>Todos os nossos produtos são 100% autênticos e certificados</p>
         </div>
         <div class="conteiner_menor">
+          <div class="icon">🚚</div>
           <h3>Entrega Rápida</h3>
           <p>Enviamos para todo o Brasil com rastreamento total</p>
         </div>
         <div class="conteiner_menor">
+          <div class="icon">💎</div>
           <h3>Raridades Exclusivas</h3>
           <p>Temos cartas raras que não encontram em outros lugares</p>
         </div>
