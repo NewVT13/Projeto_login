@@ -1,4 +1,6 @@
-function realizarLogin() {
+function realizarLogin(event) {
+  event.preventDefault();
+
   var email = document.getElementById("email").value;
   var senha = document.getElementById("senha").value;
 
@@ -30,3 +32,5 @@ function exibirSenha() {
     document.getElementById("senha").type = "text";
   }
 }
+
+document.getElementById("form_login").addEventListener("submit", realizarLogin);
