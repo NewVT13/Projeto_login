@@ -1,11 +1,62 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>home</title>
-	</head>
-	<body>
-		eu sou a home
-	</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../../styles/reset.css" />
+
+    <style>
+      .menu {
+        width: 100%;
+        height: 64px;
+        background-color: #181d36;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo_name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffe739;
+      }
+      .menu ul {
+        display: flex;
+        gap: 10px;
+        color: #fff;
+        font-size: 18px;
+      }
+      .carrinho_icone_conteiner {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+      .conteiner_direita_menu {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <h1 class="logo_name">GeekShop</h1>
+      <div class="conteiner_direita_menu">
+        <ul>
+          <li>Produtos</li>
+          <li>Sobre</li>
+          <li>Contato</li>
+        </ul>
+        <div class="carrinho_icone_conteiner">
+          <img src="../../imagens/cart.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="home.js"></script>
+  </body>
 </html>
