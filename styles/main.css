@@ -1,0 +1,25 @@
+/*Estilo de Conteiner*/
+.conteiner_principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffe636;
+  height: 200px;
+  padding: 10px;
+}
+.conteiner_principal h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+.conteiner_principal p {
+  margin-bottom: 10px;
+}
+.titulo_secundario {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
