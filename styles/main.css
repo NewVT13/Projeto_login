@@ -23,3 +23,38 @@
   font-weight: bold;
   margin-top: 20px;
 }
+/* estilo do menu  */
+.menu {
+  width: 100%;
+  height: 64px;
+  background-color: #181d36;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo_name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffe739;
+}
+.menu ul {
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+.carrinho_icone_conteiner {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.conteiner_direita_menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

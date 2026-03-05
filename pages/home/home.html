@@ -10,41 +10,6 @@
       body {
         background-color: antiquewhite;
       }
-      .menu {
-        width: 100%;
-        height: 64px;
-        background-color: #181d36;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .logo_name {
-        font-size: 24px;
-        font-weight: bold;
-        color: #ffe739;
-      }
-      .menu ul {
-        display: flex;
-        gap: 10px;
-        color: #fff;
-        font-size: 18px;
-      }
-      .carrinho_icone_conteiner {
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-      }
-      .conteiner_direita_menu {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
-
       .conteiner_cartas {
         display: flex;
         flex-direction: column;
@@ -108,19 +73,6 @@
     </style>
   </head>
   <body>
-    <div class="menu">
-      <h1 class="logo_name">GeekShop</h1>
-      <div class="conteiner_direita_menu">
-        <ul>
-          <li>Produtos</li>
-          <li>Sobre</li>
-          <li>Contato</li>
-        </ul>
-        <div class="carrinho_icone_conteiner">
-          <img src="../../imagens/cart.svg" alt="" />
-        </div>
-      </div>
-    </div>
     <div class="conteiner_principal">
       <h1>Bem-vindo à GeekShop</h1>
       <p>Encontre as melhores cartas colecionáveis para sua coleção</p>
@@ -129,26 +81,9 @@
 
     <h2 class="titulo_secundario">Cartas Disponíveis</h2>
 
-    <div class="conteiner_produtos" id="lista">
-      <div class="conteiner_cartas">
-        <div class="conteiner_imagem">
-          <img
-            src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/738/6924ac1ff1bb1-8t6ug-w0jnu-6386cdd1635c69bcd3f1e8f5ea9c84f1.jpg"
-            alt="mega charizard card"
-          />
-        </div>
-        <div class="conteiner_descricao">
-          <h3>Mega Charizard X</h3>
-          <p>Ultra rara</p>
-          <p>Charizard preto com azul</p>
-          <div class="conteiner_preco">
-            <p>Preço: R$200,00</p>
-            <button>Adicionar ao carrinho</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="conteiner_produtos" id="lista"></div>
 
     <script src="home.js"></script>
+    <script src="../../scripts/menu.js"></script>
   </body>
 </html>
