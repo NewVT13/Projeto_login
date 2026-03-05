@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <style>
+      .conteiner_form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        background-color: #f5f5f5;
+        margin: 40px auto;
+        gap: 10px;
+        box-shadow:
+          rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+      }
+      .label {
+        margin: 20px 0 5px 40px;
+      }
+      .input {
+        width: 80%;
+        padding: 10px;
+        margin: 0 0 0 35px;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      textarea {
+        width: 80%;
+        padding: 10px;
+        margin-left: 35px;
+        border-radius: 4px;
+      }
+      .conteiner_botao {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 20px 35px;
+      }
+      .conteiner_botao button {
+        width: 160px;
+        height: 35px;
+        border-radius: 4px;
+        color: #000;
+        background-color: #969696;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.25s ease-in-out;
+      }
+      #cadastrar {
+        background-color: #ffe739;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteiner_form">
+      <h2 class="titulo_secundario">Cadastro de Produto</h2>
+      <form class="form" id="form_produto">
+        <label class="label" for="nome_produto">Nome do Produto</label>
+        <input
+          class="input"
+          type="text"
+          id="nome_produto"
+          placeholder="Ex: Pikachu"
+        />
+        <label class="label" for="raridade">Raridade</label>
+        <select class="input" id="raridade">
+          <option value="">Selecione uma raridade</option>
+          <option value="Comum">Comum</option>
+          <option value="Raro">Raro</option>
+          <option value="Ultra Raro">Ultra Raro</option>
+        </select>
+        <label class="label" for="preco">Preço (R$)</label>
+        <input
+          class="input"
+          type="number"
+          id="preco"
+          step="0.01"
+          placeholder="R$ 0,50 "
+        />
+        <label class="label" for="descricao">Descrição</label>
+        <textarea
+          id="descricao"
+          rows="5"
+          placeholder="Descreva o produto aqui..."
+        ></textarea>
+        <label class="label" for="imagem_url">URL da imagem</label>
+        <input
+          id="imagem_url"
+          class="input"
+          type="url"
+          placeholder="Ex: https://exemplo.com/imagem.jpg"
+        />
+        <div class="conteiner_botao">
+          <button type="submit" id="cadastrar">cadastrar</button>
+          <button type="reset">limpar</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+    <script src="../../scripts/menu.js"></script>
+    <script src="cadastro.js"></script>
+  </body>
+</html>
