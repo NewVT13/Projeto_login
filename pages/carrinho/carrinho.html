@@ -5,15 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrinho</title>
     <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <style>
+      .form_cep {
+        width: 300px;
+        height: 300px;
+        margin: 40px auto;
+        padding: 10px;
+        background-color: #ccc;
 
-    <style></style>
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    </style>
   </head>
   <body>
     <main>
-      <h1>Carrinho</h1>
-      <p>Seu carrinho está vazio.</p>
+      <form class="form_cep" id="form_pesquisa">
+        <input
+          placeholder="Digite seu CEP"
+          id="input_cep"
+          required
+          minlength="8"
+          maxlength="8"
+        />
+        <button type="submit">Pesquisar</button>
+        <p id="bairro_info"></p>
+        <p id="logradouro_info"></p>
+        <p id="localidade_info"></p>
+        <p id="estado_info"></p>
+      </form>
     </main>
 
-    <script src="./meu_script.js"></script>
+    <script src="./carrinho.js"></script>
+    <script src="../../scripts/menu.js"></script>
   </body>
 </html>
